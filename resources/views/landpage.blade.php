@@ -7,15 +7,13 @@
     <title>Dapurku</title>
 </head>
 <body>
-    <nav class="bg-gray-400 text-white p-4">
-        <div class="container mx-auto flex justify-between items-center h-12">
-            <h1 class="font-bold m-8px p-12px">Dapurku</h1>
-            <ul class="flex flex-row space-x-6 font-[<Poppins>]">
-                <li class="hover:text-blue-500"><a href="/">Beranda</a></li>
-                <li class="hover:text-blue-500"><a href="/recipes">Tentang Kami</a></li>
-                <li class="hover:text-blue-500"><a href="/about">Menu</a></li>
-                <li class="hover:text-blue-500"><a href="/contact">Feedback</a></li>
-            </ul>
+    <nav class="flex justify-between items-center p-4 fixed top-0 left-0 right-0 border-b-1 border-black bg-[rgba(20,20,20,0.8)] text-white">
+        <p class="italic font-bold text-2xl">Dapurku</p>
+        <div class="inline-block space-x-4 mx-4 my-0 text-base font-sans">
+            <a class="link-underline" href="">Home</a>
+            <a class="link-underline" href="">About</a>
+            <a class="link-underline" href="">Menu</a>
+            <a class="link-underline" href="">Pesan</a>
         </div>
     </nav>
 </body>
