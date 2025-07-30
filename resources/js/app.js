@@ -1,13 +1,17 @@
 import './bootstrap';
 
+import Alpine from 'alpinejs';
+window.Alpine = Alpine;
+Alpine.start();
+
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 // Inisialisasi AOS
 AOS.init({
-    once: false, // Animasi akan di-trigger setiap kali elemen masuk viewport
-    duration: 800, // Durasi animasi dalam milidetik
-    delay: 200, // Delay sebelum animasi dimulai
+    once: false, 
+    duration: 800, 
+    delay: 200, 
 });
 // Untuk animasi scroll
 
@@ -91,3 +95,23 @@ document.addEventListener("DOMContentLoaded", () => {
         if (current) setActive(current);
     });
 });
+
+// Untuk modal login dan register
+    window.openModal = function () {
+        document.getElementById('authModal').classList.remove('hidden');
+        showLogin(); // default: tampilkan form login
+    }
+
+    window.closeModal = function () {
+        document.getElementById('authModal').classList.add('hidden');
+    }
+
+    window.showLogin = function () {
+        document.getElementById('loginForm').classList.remove('hidden');
+        document.getElementById('registerForm').classList.add('hidden');
+    }
+
+    window.showRegister = function () {
+        document.getElementById('loginForm').classList.add('hidden');
+        document.getElementById('registerForm').classList.remove('hidden');
+    }
