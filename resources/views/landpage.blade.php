@@ -7,7 +7,7 @@
     <title>Dapurku</title>
 </head>
 <body>
-    <!-- Modal Login/Register -->
+    <!-- Modal Login/Register -->   
     <div id="authModal" class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 hidden">
         <div class="bg-white rounded-lg shadow-lg w-full max-w-md p-6 relative">
 
@@ -59,19 +59,19 @@
     </nav>
 
     <!-- Tampilan Utama -->
-    <section class="relative bg-gradient-to-br from-yellow-50 to-white min-h-screen pb-32" id="home">
+    <section class="relative bg-gradient-to-br from-yellow-50 to-white dark:from-gray-800 dark:to-gray-900 min-h-screen pb-32" id="home">
         <!-- Optional Overlay -->
-        <div class="absolute inset-0 bg-white/30 backdrop-blur-sm z-0"></div>
+        <div class="absolute inset-0 bg-white/30 dark:bg-black/30 backdrop-blur-sm z-0"></div>
 
         <div class="relative z-10 grid place-items-center text-center max-w-screen-xl px-4 py-32 mx-auto lg:grid-cols-12 lg:gap-8 xl:gap-0 lg:py-32">
             <div class="mr-auto place-self-center lg:col-span-7 text-center lg:text-left pt-20 pl-8">
-                <h1 class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl text-gray-900 drop-shadow-md transition duration-500 ease-in-out">
-                    Selamat datang di <span class="text-yellow-500">Dapurku</span>
+                <h1 class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white text-gray-900 drop-shadow-md transition duration-500 ease-in-out">
+                    Selamat datang di <span class="text-yellow-500 dark:text-yellow-400">Dapurku</span>
                 </h1>
-                <p class="max-w-2xl mb-6 font-light text-gray-700 drop-shadow-sm md:text-lg lg:text-xl">
+                <p class="max-w-2xl mb-6 font-light text-gray-700 dark:text-gray-300 drop-shadow-sm md:text-lg lg:text-xl">
                     Menu spesial rumahan, rasa bintang lima.
                 </p>
-                <a href="#menu" class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-white bg-yellow-500 rounded-lg hover:bg-yellow-600 shadow-lg transform hover:scale-105 transition duration-300 focus:ring-4 focus:ring-yellow-300">
+                <a href="#menu" class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-white bg-yellow-500 rounded-lg hover:bg-yellow-600 shadow-lg transform hover:scale-105 transition duration-300 focus:ring-4 focus:ring-yellow-300 dark:focus:ring-yellow-900">
                     Lihat Menu
                 </a>
             </div>

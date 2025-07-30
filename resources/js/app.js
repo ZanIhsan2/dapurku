@@ -81,7 +81,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    // Optional: aktifkan berdasarkan scroll (kalau ingin lebih keren)
+    // Untuk mengatur link aktif berdasarkan scroll
     const sections = document.querySelectorAll("section[id]");
 
     window.addEventListener("scroll", () => {
